@@ -116,6 +116,22 @@
 					<encoding>utf-8</encoding>
 					<verbose>true</verbose>
 				</configuration>
+				<executions>
+		            <execution>
+		               <id>validatejacoco</id>
+		               <phase>process-test-classes</phase>
+		               <goals>
+		                  <goal>prepare-agent</goal>
+		               </goals>
+		            </execution>
+		            <execution>
+		               <id>validatejacoco2</id>
+		               <phase>test</phase>
+		               <goals>
+		                  <goal>report</goal>
+		               </goals>
+		            </execution>
+		         </executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
