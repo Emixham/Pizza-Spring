@@ -134,24 +134,31 @@
 		         </executions>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.0.0</version>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+				  <url>http://localhost:8080/manager/text</url>
+				  <warfile>D:\Documents\Cours\Cours Industrialisation Tests\pizza-spring\target\pizza-spring-0.0.1-SNAPSHOT.war</warfile>
+				  <username>deployer</username>
+				  <password>azerty</password>
+				</configuration>
 				<executions>
 					<execution>
 						<id>validate</id>
 						<phase>package</phase>
 						<goals>
-							<goal>check</goal>
+						  <goal>deploy</goal>
 						</goals>
 						<configuration>
-							<encoding>UTF-8</encoding>
-							<consoleOutput>true</consoleOutput>
-							<failsOnError>true</failsOnError>
+						  <encoding>UTF-8</encoding>
+						  <update>true</update>
+						  <consoleOutput>true</consoleOutput>
+						  <failsOnError>true</failsOnError>
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			  </plugin>
 		</plugins>
 	</build>
 </project>
