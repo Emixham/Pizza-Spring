@@ -12,7 +12,7 @@ pizza-spring,pizza.spring.modele,Ingredient,17,0,0,0,7,0,5,0,5,0
 pizza-spring,pizza.spring.modele,RapportJournalier,21,0,0,0,8,0,4,0,4,0
 pizza-spring,pizza.spring.modele,Fidelisation,15,0,0,0,6,0,3,0,3,0
 pizza-spring,pizza.spring.modele,Commande,11,55,0,0,5,20,3,11,3,11
-pizza-spring,pizza.spring.service,RapportService,11,0,0,0,3,0,3,0,3,0
+pizza-spring,pizza.spring.service,RapportService,8,3,0,0,2,1,2,1,2,1
 pizza-spring,pizza.spring.service,PizzaService,7,0,0,0,2,0,2,0,2,0
 pizza-spring,pizza.spring.service,CommandeService,18,53,0,2,5,14,4,3,4,2
 pizza-spring,pizza.spring.service,CommandeDto,4,25,0,0,2,9,1,6,1,6

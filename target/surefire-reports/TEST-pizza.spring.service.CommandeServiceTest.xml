@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="pizza.spring.service.CommandeServiceTest" time="0.86" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="pizza.spring.service.CommandeServiceTest" time="0.843" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.4+10-LTS"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\ComposerSetup\bin;C:\wamp64\bin\php\php7.2.18;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\maxdi\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\maxdi\AppData\Local\Programs\Python\Python37-32\;C:\Users\maxdi\AppData\Local\Microsoft\WindowsApps;C:\Users\maxdi\AppData\Local\GitHubDesktop\bin;C:\Users\maxdi\AppData\Roaming\Composer\vendor\bin;C:\Users\maxdi\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\ComposerSetup\bin;C:\wamp64\bin\php\php7.2.18;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.3\bin;C:\webdriver;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\maxdi\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\maxdi\AppData\Local\Programs\Python\Python37-32\;C:\Users\maxdi\AppData\Local\Microsoft\WindowsApps;C:\Users\maxdi\AppData\Local\GitHubDesktop\bin;C:\Users\maxdi\AppData\Roaming\Composer\vendor\bin;C:\Users\maxdi\AppData\Roaming\npm;."/>
     <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.4"/>
     <property name="user.language" value="fr"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,8 +65,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_positionne_le_nom_et_le_telephone" time="0.83"/>
-  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_cree_une_commande_en_attente_avec_une_date" time="0.001"/>
-  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_ajoute_une_pizza_dans_la_commande" time="0.017"/>
-  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_sauve_la_commande" time="0.012"/>
+  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_positionne_le_nom_et_le_telephone" time="0.812"/>
+  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_cree_une_commande_en_attente_avec_une_date" time="0"/>
+  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_ajoute_une_pizza_dans_la_commande" time="0.016"/>
+  <testcase classname="pizza.spring.service.CommandeServiceTest" name="commander_sauve_la_commande" time="0.015"/>
 </testsuite>
