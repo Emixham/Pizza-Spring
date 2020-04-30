@@ -23,7 +23,7 @@ import pizza.spring.modele.RapportJournalier;
 <span class="nc" id="L23">		return em.createQuery(&quot;select new pizza.spring.modele.Fidelisation(c.nom, count(c)) &quot;</span>
 							+ &quot;from Commande c &quot;
 							+ &quot;group by c.nom &quot;
-							+ &quot;order by c.nom&quot;, Fidelisation.class)
+<span class="nc" id="L26">							+ &quot;order by c.nom&quot;, Fidelisation.class)</span>
 <span class="nc" id="L27">				 .getResultList();</span>
 	}
 
@@ -38,7 +38,7 @@ import pizza.spring.modele.RapportJournalier;
 							+ &quot;where d.commande.dateEmission &gt;= :startDate &quot;
 							+ &quot;and d.commande.dateEmission &lt; :endDate &quot;
 							+ &quot;group by c &quot;
-							+ &quot;order by c.nom&quot;, RapportJournalier.class)
+<span class="nc" id="L41">							+ &quot;order by c.nom&quot;, RapportJournalier.class)</span>
 <span class="nc" id="L42">				 .setParameter(&quot;startDate&quot;, startDate)</span>
 <span class="nc" id="L43">				 .setParameter(&quot;endDate&quot;, endDate)</span>
 <span class="nc" id="L44">				 .getResultList();</span>

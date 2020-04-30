@@ -1,4 +1,108 @@
 -------------------------------------------------------------------------------
 Test set: pizza.spring.service.CommandeServiceTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.953 sec
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.939 s <<< FAILURE! - in pizza.spring.service.CommandeServiceTest
+commander_positionne_le_nom_et_le_telephone(pizza.spring.service.CommandeServiceTest)  Time elapsed: 0.524 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class pizza.spring.dao.PizzaDao.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 11.0.4+10-LTS
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 11.0.4+10-LTS
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.NoSuchMethodError: net.bytebuddy.dynamic.loading.MultipleParentClassLoader$Builder.appendMostSpecific(Ljava/util/Collection;)Lnet/bytebuddy/dynamic/loading/MultipleParentClassLoader$Builder;
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+
+commander_cree_une_commande_en_attente_avec_une_date(pizza.spring.service.CommandeServiceTest)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class pizza.spring.dao.PizzaDao.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 11.0.4+10-LTS
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 11.0.4+10-LTS
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.NoSuchMethodError: net.bytebuddy.dynamic.loading.MultipleParentClassLoader$Builder.appendMostSpecific(Ljava/util/Collection;)Lnet/bytebuddy/dynamic/loading/MultipleParentClassLoader$Builder;
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+
+commander_ajoute_une_pizza_dans_la_commande(pizza.spring.service.CommandeServiceTest)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class pizza.spring.dao.PizzaDao.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 11.0.4+10-LTS
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 11.0.4+10-LTS
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.NoSuchMethodError: net.bytebuddy.dynamic.loading.MultipleParentClassLoader$Builder.appendMostSpecific(Ljava/util/Collection;)Lnet/bytebuddy/dynamic/loading/MultipleParentClassLoader$Builder;
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+
+commander_sauve_la_commande(pizza.spring.service.CommandeServiceTest)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: class pizza.spring.dao.PizzaDao.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 11
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 11.0.4+10-LTS
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 11.0.4+10-LTS
+JVM info           : mixed mode
+OS name            : Windows 10
+OS version         : 10.0
+
+
+Underlying exception : java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.IllegalArgumentException: Could not create type
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+Caused by: java.lang.NoSuchMethodError: net.bytebuddy.dynamic.loading.MultipleParentClassLoader$Builder.appendMostSpecific(Ljava/util/Collection;)Lnet/bytebuddy/dynamic/loading/MultipleParentClassLoader$Builder;
+	at pizza.spring.service.CommandeServiceTest.initService(CommandeServiceTest.java:22)
+

@@ -15,7 +15,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-<span class="fc" id="L18">public class Commande {</span>
+<span class="nc" id="L18">public class Commande {</span>
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,8 +25,8 @@ import javax.persistence.TemporalType;
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateEmission;
 	private boolean enAttente;
-<span class="fc" id="L28">	@OneToMany(cascade = CascadeType.ALL, mappedBy = &quot;commande&quot;, fetch = FetchType.EAGER)</span>
-	private List&lt;DetailCommande&gt; details = new ArrayList&lt;&gt;();
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = &quot;commande&quot;, fetch = FetchType.EAGER)
+<span class="nc" id="L29">	private List&lt;DetailCommande&gt; details = new ArrayList&lt;&gt;();</span>
 
 	public Long getId() {
 <span class="nc" id="L32">		return id;</span>
@@ -37,39 +37,39 @@ import javax.persistence.TemporalType;
 <span class="nc" id="L37">	}</span>
 
 	public String getNom() {
-<span class="fc" id="L40">		return nom;</span>
+<span class="nc" id="L40">		return nom;</span>
 	}
 
 	public void setNom(String nom) {
-<span class="fc" id="L44">		this.nom = nom;</span>
-<span class="fc" id="L45">	}</span>
+<span class="nc" id="L44">		this.nom = nom;</span>
+<span class="nc" id="L45">	}</span>
 
 	public String getTelephone() {
-<span class="fc" id="L48">		return telephone;</span>
+<span class="nc" id="L48">		return telephone;</span>
 	}
 
 	public void setTelephone(String telephone) {
-<span class="fc" id="L52">		this.telephone = telephone;</span>
-<span class="fc" id="L53">	}</span>
+<span class="nc" id="L52">		this.telephone = telephone;</span>
+<span class="nc" id="L53">	}</span>
 
 	public Date getDateEmission() {
-<span class="fc" id="L56">		return dateEmission;</span>
+<span class="nc" id="L56">		return dateEmission;</span>
 	}
 
 	public void setDateEmission(Date dateEmission) {
-<span class="fc" id="L60">		this.dateEmission = dateEmission;</span>
-<span class="fc" id="L61">	}</span>
+<span class="nc" id="L60">		this.dateEmission = dateEmission;</span>
+<span class="nc" id="L61">	}</span>
 
 	public boolean isEnAttente() {
-<span class="fc" id="L64">		return enAttente;</span>
+<span class="nc" id="L64">		return enAttente;</span>
 	}
 
 	public void setEnAttente(boolean enAttente) {
-<span class="fc" id="L68">		this.enAttente = enAttente;</span>
-<span class="fc" id="L69">	}</span>
+<span class="nc" id="L68">		this.enAttente = enAttente;</span>
+<span class="nc" id="L69">	}</span>
 
 	public List&lt;DetailCommande&gt; getDetails() {
-<span class="fc" id="L72">		return details;</span>
+<span class="nc" id="L72">		return details;</span>
 	}
 
 	public void setDetails(List&lt;DetailCommande&gt; details) {
@@ -77,11 +77,11 @@ import javax.persistence.TemporalType;
 <span class="nc" id="L77">	}</span>
 	
 	public void ajouter(Pizza pizza) {
-<span class="fc" id="L80">		DetailCommande detailCommande = new DetailCommande();</span>
-<span class="fc" id="L81">		detailCommande.setPizza(pizza);</span>
-<span class="fc" id="L82">		detailCommande.setCommande(this);</span>
-<span class="fc" id="L83">		this.details.add(detailCommande);</span>
-<span class="fc" id="L84">	}</span>
+<span class="nc" id="L80">		DetailCommande detailCommande = new DetailCommande();</span>
+<span class="nc" id="L81">		detailCommande.setPizza(pizza);</span>
+<span class="nc" id="L82">		detailCommande.setCommande(this);</span>
+<span class="nc" id="L83">		this.details.add(detailCommande);</span>
+<span class="nc" id="L84">	}</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

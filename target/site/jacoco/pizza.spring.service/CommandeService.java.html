@@ -20,23 +20,23 @@ public class CommandeService {
 	private CommandeDao commandeDao;
 	
 	@Autowired
-<span class="fc" id="L23">	public CommandeService(PizzaDao pizzaDao, CommandeDao commandeDao) {</span>
-<span class="fc" id="L24">		this.pizzaDao = pizzaDao;</span>
-<span class="fc" id="L25">		this.commandeDao = commandeDao;</span>
-<span class="fc" id="L26">	}</span>
+<span class="nc" id="L23">	public CommandeService(PizzaDao pizzaDao, CommandeDao commandeDao) {</span>
+<span class="nc" id="L24">		this.pizzaDao = pizzaDao;</span>
+<span class="nc" id="L25">		this.commandeDao = commandeDao;</span>
+<span class="nc" id="L26">	}</span>
 
 	@Transactional
 	public Commande commander(CommandeDto commandeDto) {
-<span class="fc" id="L30">		Commande commande = new Commande();</span>
-<span class="fc" id="L31">		commande.setNom(commandeDto.getNom());</span>
-<span class="fc" id="L32">		commande.setTelephone(commandeDto.getTelephone());</span>
-<span class="fc" id="L33">		commande.setEnAttente(true);</span>
-<span class="fc" id="L34">		commande.setDateEmission(new Date());</span>
-<span class="fc bfc" id="L35" title="All 2 branches covered.">		for(Long id : commandeDto.getPizzaId()) {</span>
-<span class="fc" id="L36">			commande.ajouter(pizzaDao.getById(id));</span>
-<span class="fc" id="L37">		}</span>
-<span class="fc" id="L38">		commandeDao.sauver(commande);</span>
-<span class="fc" id="L39">		return commande;</span>
+<span class="nc" id="L30">		Commande commande = new Commande();</span>
+<span class="nc" id="L31">		commande.setNom(commandeDto.getNom());</span>
+<span class="nc" id="L32">		commande.setTelephone(commandeDto.getTelephone());</span>
+<span class="nc" id="L33">		commande.setEnAttente(true);</span>
+<span class="nc" id="L34">		commande.setDateEmission(new Date());</span>
+<span class="nc bnc" id="L35" title="All 2 branches missed.">		for(Long id : commandeDto.getPizzaId()) {</span>
+<span class="nc" id="L36">			commande.ajouter(pizzaDao.getById(id));</span>
+		}
+<span class="nc" id="L38">		commandeDao.sauver(commande);</span>
+<span class="nc" id="L39">		return commande;</span>
 	}
 
 	public Commande getRecap(Long idCommande) {

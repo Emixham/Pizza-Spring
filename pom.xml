@@ -35,6 +35,11 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
@@ -87,9 +92,15 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>3.141.59</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>3.2.4</version>
+			<version>3.3.3</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -117,48 +128,78 @@
 					<verbose>true</verbose>
 				</configuration>
 				<executions>
-		            <execution>
-		               <id>validatejacoco</id>
-		               <phase>process-test-classes</phase>
-		               <goals>
-		                  <goal>prepare-agent</goal>
-		               </goals>
-		            </execution>
-		            <execution>
-		               <id>validatejacoco2</id>
-		               <phase>test</phase>
-		               <goals>
-		                  <goal>report</goal>
-		               </goals>
-		            </execution>
-		         </executions>
+					<execution>
+						<id>validatejacoco</id>
+						<phase>process-test-classes</phase>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>validatejacoco2</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.0</version>
 				<configuration>
-				  <url>http://localhost:8080/manager/text</url>
-				  <warfile>D:\Documents\Cours\Cours Industrialisation Tests\pizza-spring\target\pizza-spring-0.0.1-SNAPSHOT.war</warfile>
-				  <username>deployer</username>
-				  <password>azerty</password>
+					<url>http://localhost:8080/manager/text</url>
+					<warfile>D:\Documents\Cours\Cours Industrialisation
+						Tests\pizza-spring\target\pizza-spring-0.0.1-SNAPSHOT.war</warfile>
+					<username>deployer</username>
+					<password>azerty</password>
 				</configuration>
 				<executions>
 					<execution>
 						<id>validate</id>
 						<phase>package</phase>
 						<goals>
-						  <goal>deploy</goal>
+							<goal>deploy</goal>
 						</goals>
 						<configuration>
-						  <encoding>UTF-8</encoding>
-						  <update>true</update>
-						  <consoleOutput>true</consoleOutput>
-						  <failsOnError>true</failsOnError>
+							<encoding>UTF-8</encoding>
+							<update>true</update>
+							<consoleOutput>true</consoleOutput>
+							<failsOnError>true</failsOnError>
 						</configuration>
 					</execution>
 				</executions>
-			  </plugin>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+				<configuration>
+					<excludes>
+						<exclude>**/*IntegrationTest.java</exclude>
+						<exclude>**/*AcceptanceTest.java</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<execution>
+						<id>integration-test</id>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<phase>integration-test</phase>
+						<configuration>
+							<excludes>
+								<exclude>none</exclude>
+							</excludes>
+							<includes>
+								<include>**/*IntegrationTest.java</include>
+								<include>**/*AcceptanceTest.java</include>
+							</includes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
