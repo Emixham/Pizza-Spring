@@ -15,6 +15,14 @@ Vous pouvez commander une pizza.
 4. Cliquez sur commander
 5. Le récapitulatif de la commande s'affiche et un bouton vous permet de retourner à l'accueil
 
+#### Eléments compris dans le récapitulatif
+|Nom du champ | Exemple|
+|:--------|:-----|
+|Type de pizza | Regina|
+|Nom du client | Kenny|
+|N° de téléphone | 0205080809|
+|Heure de la commande | 15:32:21|
+
 #### Choix possibles des pizza :
 * Margharita
 * Regina
