@@ -1,7 +1,5 @@
 # Pizza-Spring
 
-## Description du projet 
-
 Ce projet a été réalisé dans le cadre d'une formation au JAVA EE. 
 Il permet la commande d'une pizza via un formulaire et l'enregistrement des données dans une base de données SQL. 
 
@@ -45,4 +43,4 @@ Il est possible de rajouter plusieurs améliorations :
 * Permettre de retirer/ Ajouter des ingrédients au choix
 * Calculer les suppléments selon les ingrédients
 
-## Auteurs Kenny Guiroy /  Maxime Delcroix
+## Crédits Kenny Guiroy /  Maxime Delcroix
