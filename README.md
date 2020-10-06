@@ -1,12 +1,19 @@
 # Pizza-Spring
-## Auteurs Kenny Guiroy /  Maxime Delcroix
 
-### Démarrage du projet :
+## Description du projet 
+
+Ce projet a été réalisé dans le cadre d'une formation au JAVA EE. 
+Il permet la commande d'une pizza via un formulaire et l'enregistrement des données dans une base de données SQL. 
+
+
+## Installation du projet :
 1. Démarrer le serveur tomcat
 2. Démarrer le serveur de base de donnée
 3. Accéder à l'adresse de votre serveur "Localhost:8181"/Pizzaee
 
 Vous pouvez commander une pizza.
+
+## Description des pages
 
 ### Pour commander une pizza :
 1. Il faut choisir sa pizza dans le menu déroulant
@@ -29,3 +36,13 @@ Vous pouvez commander une pizza.
 * Trois fromages
 * Calzone
 * Orientale
+
+## Extensions du projet possibles 
+
+Il est possible de rajouter plusieurs améliorations :
+* Le suivi de commande 
+* Afficher les ingrédients d'une pizza
+* Permettre de retirer/ Ajouter des ingrédients au choix
+* Calculer les suppléments selon les ingrédients
+
+## Auteurs Kenny Guiroy /  Maxime Delcroix
