@@ -44,3 +44,5 @@ Il est possible de rajouter plusieurs améliorations :
 * Calculer les suppléments selon les ingrédients
 
 ## Crédits Kenny Guiroy /  Maxime Delcroix
+
+## Licence MIT
